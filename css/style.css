@@ -1,6 +1,11 @@
 body {
 	background-color: #001f3f;
 	font-weight: 300;
+	color: white;
+}
+
+input {
+	color: black;
 }
 
 #MainTitle {
@@ -34,4 +39,5 @@ figure {
 
 button {
 	margin:10px;
+	color: black;
 }

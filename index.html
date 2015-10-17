@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Guessing Game</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
- 	<link rel="stylesheet" href="css/style.css"/>
+  	<link rel="stylesheet" href="css/style.css"/>
 </head>
 
 <body>
@@ -15,12 +15,20 @@
       </div>
     </div>
   	<div class="row text-center">
-      <div class="col-md-6">
+
+      <div class="col-md-4">
       		<input type="text" id='InputNumBox' placeholder='Input Number 1-100'/>
       </div>
-         <div class="col-md-6">
-        	<figure> <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT73v87EC0kP_Rs0foWjfd2qDHqh9LmsejoD8_Hjanq8Z9lirt3jdND6Q" alt= "Picture of Question Mark" /> <figcaption> Submit your guess! </figcaption> </figure>
-      	</div>
+
+        <div class="col-md-4">
+
+          <input type="image" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT73v87EC0kP_Rs0foWjfd2qDHqh9LmsejoD8_Hjanq8Z9lirt3jdND6Q"name="Submitbutton" id="Submit" onclick = 'checkIfTrue()' /> <label for="Submit"> Submit Your Answer by Clicking! </label>
+        </div>
+
+        <div class="col-md-4">
+      <p id = 'answerStatus' > "Welcome to the Guessing Game. You have 5 guesses remaining." </p>
+      </div>
+
       </div>
 
           <div class="row"> <!-- Small row just to capture separator -->
@@ -28,21 +36,28 @@
         <hr />
       </div>
     </div>
-     <div class="row">
-     	<div class="col-md-6">
-     		<button type='button'>Play Again</button>
+     <div class="row text-center">
+     	<div class="col-md-3">
+     		<button type='button' onclick = 'clearGame()'>Play Again</button>
      	</div>
      </div>
-      <div class="row">
-     	<div class="col-md-6">
-     		<button type='button'>Get a Hint</button>
+      <div class="row text-center">
+     	<div class="col-md-3">
+     		<button type='button' onclick = 'displayAnswer()'>Get a Hint</button>
      	</div>
+        <div class="col-md-3">
+        <p id = 'resultsTable'> This is the table of results. </p>
+          </div>
      </div>
 
 
 
   </div>
 
+<!--including jquery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- Including the javascript file -->
+<script src='guess.js'></script>
 </body>
 
 
