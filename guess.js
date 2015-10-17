@@ -46,6 +46,8 @@ function tempUpdate() {
 		tempStatus = "You are getting colder!"
 	} else if (Math.abs(diff2) < Math.abs(diff1)) {
 		tempStatus = "You are getting warmer!"
+	} else {
+		tempStatus = "You are not getting colder or warmer!"
 	}
 }
 
