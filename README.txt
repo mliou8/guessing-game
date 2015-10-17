@@ -1,3 +1,3 @@
-First rough copy of Guessing-Game, using elements of bootstrap for CSS.
+This is a guessing game from 1-100. There is a randomly generated number that's from 1-100 (inclusive) and you get 5 guesses to try and guess the number.
 
-This currently hosted copy has the bootstrap files in it, but no js files yet.
+There is logic to tell you whether you are cold or warm, and also whether you are getting colder or warmer.
